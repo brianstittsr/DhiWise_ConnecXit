@@ -1,78 +1,20 @@
 import { Helmet } from "react-helmet";
-import { Text, Img, Heading, Button, Input } from "../../components";
+import { Text, Heading, Img, Button, Input } from "../../components";
+import Header6 from "../../components/Header6";
 import React from "react";
 
 export default function CXTSignUpProfileInfoOnePage() {
   return (
     <>
       <Helmet>
-        <title>Complete Your Sign Up and Join Our Network</title>
+        <title>Complete Your Sign Up for Exclusive Event Opportunities</title>
         <meta
           name="description"
-          content="Finish setting up your account to join as an Event Pro or Vendor. Discover the benefits of our partnerships and exclusive offers."
+          content="Step 2 in your account setup. Tell us how you found us and finalize your profile. Join our network and discover the benefits of being a part of our Event Pro community."
         />
       </Helmet>
       <div className="flex w-full flex-col items-center bg-white-a700">
-        <header className="flex items-center justify-center self-stretch bg-white-a700">
-          <div className="flex w-[96%] items-center justify-between gap-5 md:w-full md:flex-col md:px-5">
-            <Img
-              src="images/img_connecxit_logo.png"
-              alt="Brand Logo"
-              className="h-[90px] w-[16%] object-contain md:w-full"
-            />
-            <div className="flex w-[46%] items-center justify-center md:w-full md:flex-col">
-              <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
-                <Button
-                  shape="round"
-                  className="min-w-[194px] rounded-lg px-[26px] font-medium tracking-[-0.60px] sm:px-5"
-                >
-                  Join As An Event Pro
-                </Button>
-              </a>
-              <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
-                <Button
-                  color="red_A700"
-                  shape="round"
-                  className="ml-2 min-w-[172px] rounded-lg px-[26px] font-medium tracking-[-0.60px] md:ml-0 sm:px-5"
-                >
-                  Join As A Vendor
-                </Button>
-              </a>
-              <div className="relative ml-5 h-[40px] flex-1 md:ml-0 md:w-full md:flex-none md:self-stretch">
-                <ul className="absolute bottom-[7.18px] left-0 right-0 !m-auto flex flex-wrap gap-14 md:gap-5">
-                  <li>
-                    <a href="#">
-                      <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                        Explore
-                      </Text>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
-                      <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                        Sign up
-                      </Text>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                        Log in
-                      </Text>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#">
-                  <Img
-                    src="images/img_image_2.png"
-                    alt="Profile Image"
-                    className="absolute bottom-0 right-1/4 top-0 my-auto h-[40px] w-[40px] rounded-[20px] object-cover"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Header6 className="self-stretch" />
         <div className="mt-[202px] flex w-[36%] flex-col items-center md:w-full md:px-5">
           <Heading
             size="heading3xl"
@@ -117,7 +59,7 @@ export default function CXTSignUpProfileInfoOnePage() {
             </div>
             <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
               <Button
-                size="md"
+                size="lg"
                 shape="round"
                 className="mb-6 mt-[42px] self-stretch rounded-lg px-[34px] font-semibold tracking-[-0.56px] sm:px-5"
               >
@@ -133,7 +75,7 @@ export default function CXTSignUpProfileInfoOnePage() {
         </div>
         <footer className="mt-[70px] flex self-stretch">
           <div className="flex w-full flex-col items-center rounded-[12px] bg-black-900 p-7 sm:p-5">
-            <div className="container-3xl flex flex-col items-center gap-[84px] md:gap-[63px] sm:gap-[42px]">
+            <div className="container-4xl flex flex-col items-center gap-[84px] md:gap-[63px] sm:gap-[42px]">
               <Img
                 src="images/img_connecxit_logo.png"
                 alt="Brand Logo"
@@ -141,81 +83,113 @@ export default function CXTSignUpProfileInfoOnePage() {
               />
               <div className="ml-[42px] mr-[38px] flex w-full items-start justify-between gap-5 md:mx-0 md:flex-col">
                 <div className="flex w-[22%] flex-col items-start gap-1 md:w-full">
-                  <Text className="text-[18px] font-semibold text-white-a700">About Us</Text>
+                  <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
+                    About Us
+                  </Heading>
                   <ul className="flex flex-col items-start gap-2">
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">Company</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          Company
+                        </Text>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">Careers</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          Careers
+                        </Text>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">News</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          News
+                        </Text>
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div className="flex w-[28%] flex-col items-start gap-1 md:w-full">
-                  <Text className="text-[18px] font-semibold text-white-a700">Support</Text>
+                  <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
+                    Support
+                  </Heading>
                   <ul className="flex flex-col items-start gap-2">
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">Contact Us</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          Contact Us
+                        </Text>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">Knowledge Base</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          Knowledge Base
+                        </Text>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">Product Help Center</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          Product Help Center
+                        </Text>
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div className="flex w-[30%] flex-col items-start gap-1 self-center md:w-full">
-                  <Text className="text-[18px] font-semibold text-white-a700">Become a Partner</Text>
+                  <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
+                    Become a Partner
+                  </Heading>
                   <ul className="flex flex-col items-start gap-2">
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">Associations</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          Associations
+                        </Text>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">Francises</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          Francises
+                        </Text>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">Affilates</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          Affilates
+                        </Text>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">Offers</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          Offers
+                        </Text>
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div className="flex flex-col items-start gap-1">
-                  <Text className="text-[18px] font-semibold text-white-a700">Constant Contact Onairn</Text>
+                  <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
+                    Constant Contact Onairn
+                  </Heading>
                   <ul className="flex flex-col items-start gap-2">
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">SharpSpring</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          SharpSpring
+                        </Text>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <Text className="text-[15px] font-normal text-white-a700">Retention Science</Text>
+                        <Text as="p" className="text-[15px] font-normal text-white-a700">
+                          Retention Science
+                        </Text>
                       </a>
                     </li>
                   </ul>

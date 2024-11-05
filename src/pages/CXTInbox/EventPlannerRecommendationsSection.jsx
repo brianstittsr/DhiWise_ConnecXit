@@ -2,19 +2,19 @@ import { Heading } from "../../components";
 import UserProfile from "../../components/UserProfile";
 import React, { Suspense } from "react";
 
-const contactCardList = [
+const userCardsList = [
   { profileImage: "images/img_rectangle_276.png", userName: "Susan Von Firstenburg" },
   { profileImage: "images/img_rectangle_276.png", userName: "Susan Von Firstenburg" },
   { profileImage: "images/img_rectangle_276.png", userName: "Susan Von Firstenburg" },
   { profileImage: "images/img_rectangle_276.png", userName: "Susan Von Firstenburg" },
 ];
 
-export default function RecommendedEventPlannersSection() {
+export default function EventPlannerRecommendationsSection() {
   return (
     <>
-      {/* recommended event planners section */}
+      {/* event planner recommendations section */}
       <div className="flex flex-col items-center">
-        <div className="container-4xl flex flex-col items-start gap-[50px] pl-72 pr-14 lg:px-5 md:px-5">
+        <div className="container-6xl flex flex-col items-start gap-[50px] pl-72 pr-14 lg:px-5 md:px-5">
           <Heading
             size="heading2xl"
             as="h2"
@@ -26,7 +26,7 @@ export default function RecommendedEventPlannersSection() {
           </Heading>
           <div className="ml-9 flex w-[84%] gap-12 px-6 py-3 md:ml-0 md:w-full md:flex-col sm:px-4">
             <Suspense fallback={<div>Loading feed...</div>}>
-              {contactCardList.map((d, index) => (
+              {userCardsList.map((d, index) => (
                 <UserProfile {...d} key={"cardsList" + index} className="lg:gap-2" />
               ))}
             </Suspense>

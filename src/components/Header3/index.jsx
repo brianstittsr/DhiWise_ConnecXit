@@ -1,63 +1,62 @@
-import { Img, Text, Button } from "./..";
+import { SelectBox, Img, Heading, Text } from "./..";
 import React from "react";
+
+const dropDownOptions = [
+  { label: "Option1", value: "option1" },
+  { label: "Option2", value: "option2" },
+  { label: "Option3", value: "option3" },
+];
 
 export default function Header3({ ...props }) {
   return (
-    <header
-      {...props}
-      className={`${props.className} flex justify-center items-center overflow-x-scroll bg-white-a700`}
-    >
-      <div className="mx-auto flex w-full max-w-[1388px] items-center justify-between gap-5 md:flex-col md:px-5">
-        <Img
-          src="images/img_connecxit_logo.png"
-          alt="Brand Logo"
-          className="h-[90px] w-[16%] object-contain md:w-full"
-        />
-        <div className="flex w-[46%] items-center justify-center md:w-full md:flex-col">
-          <Button shape="round" className="min-w-[194px] rounded-lg px-[26px] font-medium tracking-[-0.60px] sm:px-5">
-            Join As An Event Pro
-          </Button>
-          <Button
-            color="red_A700"
-            shape="round"
-            className="ml-2 min-w-[172px] rounded-lg px-[26px] font-medium tracking-[-0.60px] md:ml-0 sm:px-5"
+    <header {...props} className={`${props.className} self-stretch`}>
+      <div className="container-6xl flex flex-col items-end px-2 lg:px-5 md:px-5">
+        <div className="flex w-[28%] items-start justify-end lg:w-full md:w-full sm:flex-col">
+          <ul className="flex items-start gap-16 self-center">
+            <li>
+              <a href="#">
+                <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
+                  Sign up as a pro
+                </Text>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
+                  Projects
+                </Text>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div className="flex flex-col items-center gap-4">
+                  <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
+                    Inbox
+                  </Text>
+                  <div className="h-[3px] w-full bg-green-900" />
+                </div>
+              </a>
+            </li>
+          </ul>
+          <Heading
+            size="headingxs"
+            as="p"
+            className="ml-[22px] h-[26px] w-[26px] rounded-[12px] bg-green-100 p-1 text-[12px] font-semibold tracking-[-0.48px] text-green-900 sm:ml-0"
           >
-            Join As A Vendor
-          </Button>
-          <div className="relative ml-5 h-[40px] flex-1 md:ml-0 md:w-full md:flex-none md:self-stretch">
-            <ul className="absolute bottom-[7.18px] left-0 right-0 !m-auto flex flex-wrap gap-14 md:gap-5">
-              <li>
-                <a href="#">
-                  <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                    Explore
-                  </Text>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                    Sign up
-                  </Text>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                    Log in
-                  </Text>
-                </a>
-              </li>
-            </ul>
-            <a href="#">
-              <Img
-                src="images/img_image_2.png"
-                alt="Secondary Logo"
-                className="absolute bottom-0 right-1/4 top-0 my-auto h-[40px] w-[40px] rounded-[20px] object-cover"
-              />
-            </a>
-          </div>
+            UN
+          </Heading>
+          <SelectBox
+            size="xs"
+            shape="square"
+            indicator={<Img src="images/img_arrowdown_black_900_02.svg" alt="Arrow Down" className="h-[5px] w-[8px]" />}
+            name="User Dropdown"
+            placeholder={`User name`}
+            options={dropDownOptions}
+            className="ml-3 w-[20%] gap-3 tracking-[-0.60px] text-black-900_01 sm:ml-0 sm:w-full"
+          />
         </div>
       </div>
+      <div className="h-px w-full self-stretch bg-blue_gray-100" />
     </header>
   );
 }

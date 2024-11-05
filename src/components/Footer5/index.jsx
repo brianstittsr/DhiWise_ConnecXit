@@ -1,19 +1,17 @@
-import { Text, Heading } from "./..";
+import { Text, Heading, Img } from "./..";
 import React from "react";
 
-export default function Footer2({ ...props }) {
+export default function Footer5({ ...props }) {
   return (
-    <footer
-      {...props}
-      className={`${props.className} flex flex-col w-full pl-[188px] pr-14 py-[78px] mx-auto lg:px-5 lg:py-8 md:p-5 sm:px-5 sm:py-4 max-w-[1838px]`}
-    >
-      <div className="mt-[46px] flex w-[62%] flex-col items-center gap-[118px] lg:w-full lg:gap-[118px] md:w-full md:gap-[88px] sm:gap-[59px]">
-        <div className="container-3xl flex items-start justify-between gap-5 lg:px-5 md:flex-col md:px-5">
-          <div className="flex w-[22%] flex-col items-start gap-2.5 md:w-full">
-            <Heading as="h6" className="text-[18px] font-semibold text-white-a700 lg:text-[15px]">
+    <footer {...props} className={`${props.className} flex flex-col p-7 sm:p-5 bg-black-900 rounded-[12px]`}>
+      <div className="container-4xl flex flex-col items-center gap-[84px] md:gap-[63px] sm:gap-[42px]">
+        <Img src="images/img_connecxit_logo.png" alt="Logo" className="h-[150px] w-[26%] self-end object-contain" />
+        <div className="ml-[42px] mr-[38px] flex w-full items-start justify-between gap-5 md:mx-0 md:flex-col">
+          <div className="flex w-[22%] flex-col items-start gap-1 md:w-full">
+            <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
               About Us
             </Heading>
-            <ul className="flex flex-col items-start gap-0.5">
+            <ul className="flex flex-col items-start gap-2">
               <li>
                 <a href="Company" target="_blank" rel="noreferrer">
                   <Text as="p" className="text-[15px] font-normal text-white-a700">
@@ -37,11 +35,11 @@ export default function Footer2({ ...props }) {
               </li>
             </ul>
           </div>
-          <div className="mt-1 flex w-[28%] flex-col items-start gap-2.5 md:w-full">
-            <Heading as="h6" className="text-[18px] font-semibold text-white-a700 lg:text-[15px]">
+          <div className="flex w-[28%] flex-col items-start gap-1 md:w-full">
+            <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
               Support
             </Heading>
-            <ul className="flex flex-col items-start gap-0.5">
+            <ul className="flex flex-col items-start gap-2">
               <li>
                 <a href="#">
                   <Text as="p" className="text-[15px] font-normal text-white-a700">
@@ -65,18 +63,11 @@ export default function Footer2({ ...props }) {
               </li>
             </ul>
           </div>
-          <div className="flex w-[30%] flex-col items-start gap-2.5 self-center md:w-full">
-            <Heading as="h6" className="text-[18px] font-semibold text-white-a700 lg:text-[15px]">
+          <div className="flex w-[30%] flex-col items-start gap-1 self-center md:w-full">
+            <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
               Become a Partner
             </Heading>
-            <ul className="flex flex-col items-start gap-0.5">
-              <li>
-                <a href="Agencies" target="_blank" rel="noreferrer">
-                  <Text as="p" className="text-[15px] font-normal text-white-a700">
-                    Agencies
-                  </Text>
-                </a>
-              </li>
+            <ul className="flex flex-col items-start gap-2">
               <li>
                 <a href="Associations" target="_blank" rel="noreferrer">
                   <Text as="p" className="text-[15px] font-normal text-white-a700">
@@ -107,11 +98,11 @@ export default function Footer2({ ...props }) {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col items-start gap-2.5">
-            <Heading as="h6" className="text-[18px] font-semibold text-white-a700 lg:text-[15px]">
+          <div className="flex flex-col items-start gap-1">
+            <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
               Constant Contact Onairn
             </Heading>
-            <ul className="flex flex-col items-start gap-0.5">
+            <ul className="flex flex-col items-start gap-2">
               <li>
                 <a href="SharpSpring" target="_blank" rel="noreferrer">
                   <Text as="p" className="text-[15px] font-normal text-white-a700">
@@ -129,7 +120,7 @@ export default function Footer2({ ...props }) {
             </ul>
           </div>
         </div>
-        <div className="container-5xl h-[0.7px] bg-white-a700 lg:px-5 md:px-5" />
+        <div className="h-[0.7px] w-full self-stretch bg-white-a700" />
       </div>
     </footer>
   );

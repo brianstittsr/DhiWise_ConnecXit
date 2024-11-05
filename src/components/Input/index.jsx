@@ -12,14 +12,15 @@ const variants = {
   },
   outline: {
     gray_300_01: "border-gray-300_01 border border-solid text-gray-700_03",
-    gray_500: "border-gray-500 border border-solid text-gray-700_03",
+    gray_500: "border-gray-500 border border-solid text-white-a700",
   },
 };
 
 const sizes = {
-  md: "h-[94px] px-3",
-  xs: "h-[36px] px-3.5 text-[15px]",
-  sm: "h-[36px] px-3.5",
+  lg: "h-[94px] px-3",
+  sm: "h-[36px] px-3.5 text-[15px]",
+  xs: "h-[32px] px-[26px] text-[15px]",
+  md: "h-[36px] px-3.5",
 };
 
 const Input = React.forwardRef(
@@ -35,7 +36,7 @@ const Input = React.forwardRef(
       onChange,
       shape,
       variant = "outline",
-      size = "sm",
+      size = "md",
       color = "gray_500",
       ...restProps
     },
@@ -62,7 +63,7 @@ Input.propTypes = {
   prefix: PropTypes.node,
   suffix: PropTypes.node,
   shape: PropTypes.oneOf(["round", "square"]),
-  size: PropTypes.oneOf(["md", "xs", "sm"]),
+  size: PropTypes.oneOf(["lg", "sm", "xs", "md"]),
   variant: PropTypes.oneOf(["fill", "outline"]),
   color: PropTypes.oneOf(["white_A700", "gray_300_01", "gray_500"]),
 };

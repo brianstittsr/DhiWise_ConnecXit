@@ -1,10 +1,10 @@
 import { Switch, Text, Heading } from "../../components";
 import React from "react";
 
-export default function BillingDetailSection() {
+export default function BillingSection() {
   return (
     <>
-      {/* billing detail section */}
+      {/* billing section */}
       <div className="flex flex-col items-end gap-[104px] self-stretch px-10 md:gap-[78px] sm:gap-[52px] sm:px-5">
         <div className="mr-1 self-stretch md:mr-0">
           <div className="flex flex-col items-start">

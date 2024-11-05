@@ -5,9 +5,9 @@ export default function EventPromotionSection() {
   return (
     <>
       {/* event promotion section */}
-      <div className="flex justify-center self-stretch px-14 md:px-5">
-        <div className="flex w-[88%] items-center justify-center md:w-full md:flex-col">
-          <div className="flex flex-1 flex-col items-start md:self-stretch">
+      <div className="flex justify-center self-stretch">
+        <div className="container-lg flex items-center justify-center px-14 md:flex-col md:px-5">
+          <div className="flex w-[50%] flex-col items-start md:w-full">
             <Heading
               size="heading4xl"
               as="h2"
@@ -33,7 +33,7 @@ export default function EventPromotionSection() {
           <Img
             src="images/img_rectangle_7.png"
             alt="Event Image"
-            className="h-[434px] w-[42%] rounded-[30px] object-contain md:w-full"
+            className="h-[434px] w-[40%] rounded-[30px] object-contain md:w-full"
           />
         </div>
       </div>

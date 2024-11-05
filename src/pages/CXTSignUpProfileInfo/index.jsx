@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
-import { Button, Input, Text, Heading, Img } from "../../components";
-import Footer4 from "../../components/Footer4";
+import { Button, Input, Text, Heading } from "../../components";
+import Footer1 from "../../components/Footer1";
+import Header6 from "../../components/Header6";
 import React from "react";
 
 export default function CXTSignUpProfileInfoPage() {
@@ -10,70 +11,11 @@ export default function CXTSignUpProfileInfoPage() {
         <title>Sign Up and Create Your Event Pro Profile Today</title>
         <meta
           name="description"
-          content="Join our community as an Event Pro or Vendor. Start by setting up your account with easy steps. Get access to our Knowledge Base and Partner offers."
+          content="Join our community as an Event Pro or Vendor. Start by setting up your account with easy steps. Address, City, State, ZipCode - all you need to begin your journey with us."
         />
       </Helmet>
       <div className="flex w-full flex-col items-center gap-[74px] bg-white-a700 md:gap-[55px] sm:gap-[37px]">
-        <header className="flex items-center justify-center self-stretch bg-white-a700">
-          <div className="flex w-[96%] items-center justify-between gap-5 md:w-full md:flex-col md:px-5">
-            <Img
-              src="images/img_connecxit_logo.png"
-              alt="Brand Logo"
-              className="h-[90px] w-[16%] object-contain md:w-full"
-            />
-            <div className="flex w-[46%] items-center justify-center md:w-full md:flex-col">
-              <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
-                <Button
-                  shape="round"
-                  className="min-w-[194px] rounded-lg px-[26px] font-medium tracking-[-0.60px] sm:px-5"
-                >
-                  Join As An Event Pro
-                </Button>
-              </a>
-              <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
-                <Button
-                  color="red_A700"
-                  shape="round"
-                  className="ml-2 min-w-[172px] rounded-lg px-[26px] font-medium tracking-[-0.60px] md:ml-0 sm:px-5"
-                >
-                  Join As A Vendor
-                </Button>
-              </a>
-              <div className="relative ml-5 h-[40px] flex-1 md:ml-0 md:w-full md:flex-none md:self-stretch">
-                <ul className="absolute bottom-[7.18px] left-0 right-0 !m-auto flex flex-wrap gap-14 md:gap-5">
-                  <li>
-                    <a href="#">
-                      <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                        Explore
-                      </Text>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
-                      <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                        Sign up
-                      </Text>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                        Log in
-                      </Text>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#">
-                  <Img
-                    src="images/img_image_2.png"
-                    alt="Secondary Image"
-                    className="absolute bottom-0 right-1/4 top-0 my-auto h-[40px] w-[40px] rounded-[20px] object-cover"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Header6 className="self-stretch" />
         <div className="flex w-[36%] flex-col items-center gap-3.5 md:w-full md:px-5">
           <Heading
             size="heading3xl"
@@ -118,7 +60,7 @@ export default function CXTSignUpProfileInfoPage() {
             </div>
             <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
               <Button
-                size="md"
+                size="lg"
                 shape="round"
                 className="mb-[22px] mt-[42px] self-stretch rounded-lg px-[34px] font-semibold tracking-[-0.56px] sm:px-5"
               >
@@ -127,7 +69,7 @@ export default function CXTSignUpProfileInfoPage() {
             </a>
           </div>
         </div>
-        <Footer4 />
+        <Footer1 />
       </div>
     </>
   );

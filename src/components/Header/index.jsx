@@ -1,59 +1,45 @@
-import MegaMenu1 from "../MegaMenu1";
-import { Img, Text, Heading } from "./..";
+import { Text, Img } from "./..";
 import React from "react";
 
 export default function Header({ ...props }) {
-  const [menuOpen, setMenuOpen] = React.useState(false);
-
   return (
-    <header {...props} className={`${props.className} flex justify-end items-center w-full mb-[46px]`}>
-      <div className="relative h-[26px] w-[40%]">
-        <Heading
-          size="headingxs"
-          as="p"
-          className="absolute bottom-0 right-[21%] top-0 my-auto h-max w-[26px] rounded-[12px] bg-green-100 p-1 text-[12px] font-semibold tracking-[-0.48px] text-green-900"
-        >
-          UN
-        </Heading>
-        <ul className="absolute bottom-0 left-0 right-0 top-0 !m-auto flex h-max gap-[74px] sm:relative sm:flex-col">
-          <li>
-            <a href="#">
-              <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                Sign up as a pro
-              </Text>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                Projects
-              </Text>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                Inbox
-              </Text>
-            </a>
-          </li>
-          <li
-            onMouseLeave={() => {
-              setMenuOpen(false);
-            }}
-            onMouseEnter={() => {
-              setMenuOpen(true);
-            }}
-          >
-            <div className="flex cursor-pointer items-center gap-3">
-              <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                User name
-              </Text>
-              <Img src="images/img_arrowdown_black_900_02.svg" alt="Dropdown Arrow" className="mb-2 h-[3px] w-[8px]" />
-            </div>
-            {menuOpen ? <MegaMenu1 /> : null}
-          </li>
-        </ul>
+    <header
+      {...props}
+      className={`${props.className} flex sm:flex-col justify-between items-center gap-5 bg-white-a700`}
+    >
+      <Img src="images/img_connecxit_logo.png" alt="Logo Image" className="h-[90px] w-[16%] object-contain md:w-full" />
+      <div className="mx-auto flex w-full max-w-[894px] items-center justify-center gap-[9px] px-[34px] md:flex-col md:px-5">
+        <div className="flex flex-1 gap-2 md:self-stretch sm:flex-col">
+          <div className="flex w-[26%] justify-center rounded-lg bg-red-a700 p-1 sm:w-full">
+            <Text className="text-[15px] font-medium tracking-[-0.60px] text-white-a700">Get Tickets</Text>
+          </div>
+          <div className="flex flex-1 justify-center rounded-lg bg-deep_orange-500 p-1 sm:self-stretch">
+            <Text className="text-[15px] font-medium tracking-[-0.60px] text-white-a700">Join As An Event Pro</Text>
+          </div>
+          <div className="flex w-[34%] justify-center rounded-lg bg-red-a700 p-1 sm:w-full">
+            <Text className="text-[15px] font-medium tracking-[-0.60px] text-white-a700">Join As A Vendor</Text>
+          </div>
+        </div>
+        <div className="flex w-[34%] items-center justify-center gap-2 md:w-full">
+          <div className="mb-1.5 flex flex-1 justify-center self-end px-2.5">
+            <Text className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">Explore</Text>
+          </div>
+          <div className="flex-1">
+            <Text className="text-center text-[15px] font-normal leading-[114.7%] tracking-[-0.60px] text-black-900_01">
+              Member Sign up
+            </Text>
+          </div>
+          <a href="#">
+            <Img
+              src="images/img_image_2.png"
+              alt="Secondary Image"
+              className="h-[40px] w-[40px] rounded-[20px] object-cover"
+            />
+          </a>
+          <div className="mb-1.5 flex flex-1 justify-center self-end px-4">
+            <Text className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">Log in</Text>
+          </div>
+        </div>
       </div>
     </header>
   );

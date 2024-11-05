@@ -1,17 +1,13 @@
 import { Text, Heading, Img } from "./..";
 import React from "react";
 
-export default function Footer3({ ...props }) {
+export default function Footer31({ ...props }) {
   return (
-    <footer {...props} className={`${props.className} flex items-center`}>
-      <div className="w-full rounded-[12px] bg-black-900 py-7 sm:py-5">
-        <div className="flex flex-col items-center gap-[84px] px-14 md:gap-[63px] md:px-5 sm:gap-[42px]">
-          <Img
-            src="images/img_connecxit_logo.png"
-            alt="Company Logo"
-            className="h-[150px] w-[26%] self-end object-contain"
-          />
-          <div className="container-2xl flex items-start justify-between gap-5 md:flex-col">
+    <footer {...props} className={`${props.className} flex self-stretch items-center`}>
+      <div className="flex w-full flex-col items-start rounded-[12px] bg-black-900 px-14 py-7 md:px-5 sm:p-5">
+        <div className="flex w-[86%] flex-col items-end gap-[84px] md:w-full md:gap-[63px] sm:gap-[42px]">
+          <Img src="images/img_connecxit_logo.png" alt="Logo" className="h-[150px] w-[30%] object-contain" />
+          <div className="container-2xl flex items-start justify-between gap-5 md:flex-col md:px-5">
             <div className="flex w-[22%] flex-col items-start gap-1 md:w-full">
               <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
                 About Us
@@ -125,7 +121,7 @@ export default function Footer3({ ...props }) {
               </ul>
             </div>
           </div>
-          <div className="container-3xl h-[0.7px] self-stretch bg-white-a700 md:px-5" />
+          <div className="h-[0.7px] w-full bg-white-a700" />
         </div>
       </div>
     </footer>

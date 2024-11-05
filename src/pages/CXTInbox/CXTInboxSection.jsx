@@ -7,12 +7,12 @@ const dropDownOptions = [
   { label: "Option3", value: "option3" },
 ];
 
-export default function InboxSection() {
+export default function CXTInboxSection() {
   return (
     <>
-      {/* inbox section */}
+      {/* c x t inbox section */}
       <div className="flex flex-col items-center">
-        <div className="container-4xl flex flex-col items-center gap-[38px] px-14 lg:px-5 md:px-5">
+        <div className="container-6xl flex flex-col items-center gap-[38px] px-14 lg:px-5 md:px-5">
           <div className="flex w-[36%] justify-center rounded-[22px] border border-solid border-gray-300_01 lg:w-full md:w-full sm:flex-col">
             <div className="flex flex-1 items-center justify-center gap-5 px-5 sm:self-stretch">
               <SelectBox
@@ -20,10 +20,10 @@ export default function InboxSection() {
                 indicator={
                   <Img src="images/img_arrowdown_black_900_02.svg" alt="Arrow Down" className="h-[6px] w-[8px]" />
                 }
-                name="Dropdown"
+                name="Schedule Dropdown"
                 placeholder={`When?`}
                 options={dropDownOptions}
-                className="w-[38%] gap-2.5 !border-b px-3 tracking-[-0.60px]"
+                className="w-[38%] gap-2.5 !border-b tracking-[-0.60px]"
               />
               <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
                 What’s on your to do list?
@@ -37,7 +37,7 @@ export default function InboxSection() {
                   Zip code
                 </Text>
               </div>
-              <Button size="lg" shape="circle" className="w-[40px] rounded-[20px] px-2.5">
+              <Button size="xl" shape="circle" className="w-[40px] rounded-[20px] px-2.5">
                 <Img src="images/img_search.svg" />
               </Button>
             </div>
@@ -65,7 +65,7 @@ export default function InboxSection() {
                 <div className="relative h-[34px] content-center self-stretch lg:h-auto md:h-auto">
                   <Input
                     color="gray_300_01"
-                    size="xs"
+                    size="sm"
                     shape="round"
                     name="Phone Input"
                     placeholder={`(555) 555-5555`}
@@ -96,7 +96,7 @@ export default function InboxSection() {
                 >
                   Once you create a project, you will see your messages and booking reminders-all right here
                 </Text>
-                <Button size="xs" className="min-w-[128px] rounded-[5px] px-5 font-semibold tracking-[-0.60px]">
+                <Button className="min-w-[128px] rounded-[5px] px-5 font-semibold tracking-[-0.60px]">
                   New project
                 </Button>
               </div>

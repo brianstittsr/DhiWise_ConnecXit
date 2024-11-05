@@ -6,14 +6,14 @@ export default function FramePage() {
   return (
     <>
       <Helmet>
-        <title>Frame - Your Content Display Solution</title>
+        <title>Frame - Enhance Your Projects</title>
         <meta
           name="description"
-          content="Discover the perfect way to frame and showcase your content with our innovative display solutions. Ideal for professionals and creatives alike."
+          content="Discover the power of framing to elevate your projects. Our Frame feature offers a blank canvas to bring your creative and professional visions to life."
         />
       </Helmet>
       <div className="flex w-full justify-center border border-solid border-black-900_02 py-[148px] shadow-lg lg:py-8 md:py-5 sm:py-4">
-        <div className="container-4xl flex justify-center px-14 lg:px-5 md:px-5">
+        <div className="container-6xl flex justify-center px-14 lg:px-5 md:px-5">
           <div className="flex w-[68%] justify-center border border-solid border-black-900_02 bg-white-a700 shadow-lg lg:w-full md:w-full">
             <div className="flex w-full gap-[22px] md:flex-col">
               <Suspense fallback={<div>Loading feed...</div>}>

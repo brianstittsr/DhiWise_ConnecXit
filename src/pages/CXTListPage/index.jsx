@@ -1,80 +1,21 @@
 import { Helmet } from "react-helmet";
-import { Img, Switch, Text, Heading, Button } from "../../components";
-import Footer from "../../components/Footer";
+import { Text, Heading, Img, Switch, Button } from "../../components";
+import Header6 from "../../components/Header6";
 import React from "react";
 
 export default function CXTListPagePage() {
   return (
     <>
       <Helmet>
-        <title>Find Professional Chefs - ConnecXit Chef Listings</title>
+        <title>Find Professional Chefs - ConnecXit Listings</title>
         <meta
           name="description"
-          content="Discover top-rated chefs in Raleigh, NC. View profiles, starting prices, and read customer testimonials to find the perfect chef for your event."
+          content="Discover professional chefs matching your criteria on ConnecXit. View profiles, starting prices, and read customer testimonials to find the perfect chef for your event."
         />
       </Helmet>
       <div className="w-full bg-white-a700">
         <div className="flex flex-col items-start gap-[62px] sm:gap-[31px]">
-          <header className="flex items-center justify-center self-stretch bg-white-a700">
-            <div className="flex w-[96%] items-center justify-between gap-5 md:w-full md:flex-col md:px-5">
-              <Img
-                src="images/img_connecxit_logo.png"
-                alt="Logo Image"
-                className="h-[90px] w-[16%] object-contain md:w-full"
-              />
-              <div className="flex w-[46%] items-center justify-center md:w-full md:flex-col">
-                <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
-                  <Button
-                    shape="round"
-                    className="min-w-[194px] rounded-lg px-[26px] font-medium tracking-[-0.60px] sm:px-5"
-                  >
-                    Join As An Event Pro
-                  </Button>
-                </a>
-                <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
-                  <Button
-                    color="red_A700"
-                    shape="round"
-                    className="ml-2 min-w-[172px] rounded-lg px-[26px] font-medium tracking-[-0.60px] md:ml-0 sm:px-5"
-                  >
-                    Join As A Vendor
-                  </Button>
-                </a>
-                <div className="relative ml-5 h-[40px] flex-1 md:ml-0 md:w-full md:flex-none md:self-stretch">
-                  <ul className="absolute bottom-[7.18px] left-0 right-0 !m-auto flex flex-wrap gap-14 md:gap-5">
-                    <li>
-                      <a href="#">
-                        <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                          Explore
-                        </Text>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
-                        <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                          Sign up
-                        </Text>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                          Log in
-                        </Text>
-                      </a>
-                    </li>
-                  </ul>
-                  <a href="#">
-                    <Img
-                      src="images/img_image_2.png"
-                      alt="Profile Image"
-                      className="absolute bottom-0 right-1/4 top-0 my-auto h-[40px] w-[40px] rounded-[20px] object-cover"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </header>
+          <Header6 className="self-stretch" />
           <Heading
             size="heading2xl"
             as="h1"
@@ -83,7 +24,7 @@ export default function CXTListPagePage() {
             Chefs that matched your search criteria ...
           </Heading>
           <div className="flex flex-col items-center self-stretch">
-            <div className="container-lg flex items-start justify-center self-stretch py-1.5 md:flex-col md:px-5">
+            <div className="container-xl flex items-start justify-center self-stretch py-1.5 md:flex-col md:px-5">
               <div className="mt-3 flex flex-col items-start">
                 <Text as="p" className="text-[15px] font-medium tracking-[-0.60px] text-blue_gray-900_01">
                   Filters
@@ -184,7 +125,131 @@ export default function CXTListPagePage() {
                 <Img src="images/img_ellipse_13.png" alt="Secondary Image" className="h-px w-[2%] object-contain" />
               </div>
             </div>
-            <Footer className="relative mt-[-6px] self-stretch" />
+            <footer className="relative mt-[-6px] flex self-stretch">
+              <div className="flex w-full flex-col items-center rounded-[12px] bg-black-900 p-[30px] sm:p-5">
+                <div className="mx-auto mb-[86px] flex w-full max-w-[1282px] flex-col items-end gap-[82px] md:gap-[61px] sm:gap-[41px]">
+                  <Img
+                    src="images/img_connecxit_logo.png"
+                    alt="Company Logo"
+                    className="h-[150px] w-[28%] object-contain"
+                  />
+                  <div className="mr-[38px] flex w-full items-start justify-between gap-5 md:mr-0 md:flex-col">
+                    <div className="flex w-[22%] flex-col items-start gap-1 md:w-full">
+                      <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
+                        About Us
+                      </Heading>
+                      <ul className="flex flex-col items-start gap-2">
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              Company
+                            </Text>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              Careers
+                            </Text>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              News
+                            </Text>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="flex w-[28%] flex-col items-start gap-1 md:w-full">
+                      <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
+                        Support
+                      </Heading>
+                      <ul className="flex flex-col items-start gap-2">
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              Contact Us
+                            </Text>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              Knowledge Base
+                            </Text>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              Product Help Center
+                            </Text>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="flex w-[30%] flex-col items-start gap-1 self-center md:w-full">
+                      <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
+                        Become a Partner
+                      </Heading>
+                      <ul className="flex flex-col items-start gap-2">
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              Associations
+                            </Text>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              Francises
+                            </Text>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              Affilates
+                            </Text>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              Offers
+                            </Text>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="flex flex-col items-start gap-1">
+                      <Heading as="h6" className="text-[18px] font-semibold text-white-a700">
+                        Constant Contact Onairn
+                      </Heading>
+                      <ul className="flex flex-col items-start gap-2">
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              SharpSpring
+                            </Text>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <Text as="p" className="text-[15px] font-normal text-white-a700">
+                              Retention Science
+                            </Text>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
           </div>
         </div>
       </div>

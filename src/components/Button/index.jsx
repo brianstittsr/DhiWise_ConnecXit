@@ -10,8 +10,8 @@ const variants = {
   fill: {
     black_900_33: "bg-black-900_33 text-black-900_02",
     white_A700: "bg-white-a700 shadow-md",
+    red_A700: "bg-red-a700",
     green_900: "bg-green-900 text-white-a700",
-    red_A700: "bg-red-a700 text-white-a700",
     deep_orange_500: "bg-deep_orange-500 text-white-a700",
   },
   outline: {
@@ -19,11 +19,10 @@ const variants = {
   },
 };
 const sizes = {
-  xl: "h-[62px] px-[26px] text-[40px]",
-  lg: "h-[40px] px-3",
   xs: "h-[28px] px-4 text-[13px]",
-  md: "h-[36px] px-[34px] text-[14px]",
-  sm: "h-[32px] px-[26px] text-[15px]",
+  xl: "h-[40px] px-3",
+  lg: "h-[36px] px-[34px] text-[14px]",
+  sm: "h-[32px] px-[18px] text-[15px]",
 };
 
 const Button = ({
@@ -55,9 +54,9 @@ Button.propTypes = {
   leftIcon: PropTypes.node,
   rightIcon: PropTypes.node,
   shape: PropTypes.oneOf(["square", "circle", "round"]),
-  size: PropTypes.oneOf(["xl", "lg", "xs", "md", "sm"]),
+  size: PropTypes.oneOf(["xs", "xl", "lg", "sm"]),
   variant: PropTypes.oneOf(["fill", "outline"]),
-  color: PropTypes.oneOf(["black_900_33", "white_A700", "green_900", "red_A700", "deep_orange_500", "gray_500"]),
+  color: PropTypes.oneOf(["black_900_33", "white_A700", "red_A700", "green_900", "deep_orange_500", "gray_500"]),
 };
 
 export { Button };

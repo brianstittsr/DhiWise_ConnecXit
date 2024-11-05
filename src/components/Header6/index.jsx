@@ -1,13 +1,10 @@
 import { Img, Text, Button } from "./..";
 import React from "react";
 
-export default function Header2({ ...props }) {
+export default function Header6({ ...props }) {
   return (
-    <header
-      {...props}
-      className={`${props.className} flex justify-center items-center overflow-x-scroll bg-white-a700`}
-    >
-      <div className="mx-auto flex w-full max-w-[1388px] items-center justify-between gap-5 md:flex-col md:px-5">
+    <header {...props} className={`${props.className} flex justify-center items-center bg-white-a700`}>
+      <div className="flex w-[96%] items-center justify-between gap-5 md:w-full md:flex-col">
         <Img
           src="images/img_connecxit_logo.png"
           alt="Brand Logo"
@@ -51,7 +48,7 @@ export default function Header2({ ...props }) {
             <a href="#">
               <Img
                 src="images/img_image_2.png"
-                alt="Secondary Logo"
+                alt="Profile Image"
                 className="absolute bottom-0 right-1/4 top-0 my-auto h-[40px] w-[40px] rounded-[20px] object-cover"
               />
             </a>

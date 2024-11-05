@@ -1,7 +1,7 @@
 import { Heading, Img } from "./..";
 import React, { Suspense } from "react";
 
-const logisticsOptions = [
+const cardList = [
   { transportationImage: "images/img_rectangle_276_3.png", transportationTitle: "Transportation" },
   { transportationImage: "images/img_rectangle_276_4.png", transportationTitle: "Venues" },
   { transportationImage: "images/img_rectangle_276_5.png", transportationTitle: "Disc Jockeys (DJ’s)" },
@@ -10,11 +10,11 @@ const logisticsOptions = [
 
 export default function CXTLandingRowtransportati({ ...props }) {
   return (
-    <div {...props} className={`${props.className} flex justify-center items-center px-14 md:px-5 flex-1`}>
-      <div className="container-xl flex gap-12 px-6 py-3.5 md:flex-col sm:px-5">
+    <div {...props} className={`${props.className} flex justify-center items-center px-14 md:px-5`}>
+      <div className="mx-auto flex w-full max-w-[1224px] gap-12 px-6 py-3.5 md:flex-col sm:px-5">
         <Suspense fallback={<div>Loading feed...</div>}>
-          {logisticsOptions.map((d, index) => (
-            <div key={"cardList" + index} className="flex w-[24%] flex-col items-center gap-2 md:w-full">
+          {cardList.map((d, index) => (
+            <div key={"cardList1" + index} className="flex w-[24%] flex-col items-center gap-2 md:w-full">
               <Img
                 src={d.transportationImage}
                 alt="Transportation Image"

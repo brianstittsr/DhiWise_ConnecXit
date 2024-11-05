@@ -1,16 +1,16 @@
 import { Helmet } from "react-helmet";
 import { Button, Heading, Text, Input, Img } from "../../components";
-import Footer from "../../components/Footer";
+import Footer4 from "../../components/Footer4";
 import React from "react";
 
 export default function CXTSignUpWizardPage() {
   return (
     <>
       <Helmet>
-        <title>Registration - Join Our Platform</title>
+        <title>Registration Wizard - Start Your Journey</title>
         <meta
           name="description"
-          content="Begin your registration process to become an event pro or vendor. Ensure your account security with our password guidelines."
+          content="Begin your journey with our easy step-by-step registration wizard. Join as an Event Pro or Vendor and connect with a vibrant community."
         />
       </Helmet>
       <div className="flex w-full flex-col items-center gap-[90px] bg-white-a700 md:gap-[67px] sm:gap-[45px]">
@@ -24,17 +24,18 @@ export default function CXTSignUpWizardPage() {
             <div className="flex w-[50%] items-center justify-center md:w-full md:flex-col">
               <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
                 <Button
-                  shape="round"
-                  className="min-w-[194px] rounded-lg px-[26px] font-medium tracking-[-0.60px] sm:px-5"
+                  color="gray_500"
+                  size="xs"
+                  className="min-w-[194px] rounded-lg !bg-deep_orange-500 px-[26px] font-medium tracking-[-0.60px] text-white-a700 sm:px-5"
                 >
                   Join As An Event Pro
                 </Button>
               </a>
               <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
                 <Button
-                  color="red_A700"
-                  shape="round"
-                  className="ml-2 min-w-[172px] rounded-lg px-[26px] font-medium tracking-[-0.60px] md:ml-0 sm:px-5"
+                  color="gray_500"
+                  size="xs"
+                  className="ml-2 min-w-[172px] rounded-lg !bg-red-a700 px-[26px] font-medium tracking-[-0.60px] text-white-a700 md:ml-0 sm:px-5"
                 >
                   Join As A Vendor
                 </Button>
@@ -156,7 +157,7 @@ export default function CXTSignUpWizardPage() {
                   </Heading>
                 </a>
                 <Button
-                  size="md"
+                  size="lg"
                   shape="round"
                   className="absolute bottom-0 left-0 right-0 top-0 m-auto flex-1 rounded-lg px-[34px] font-semibold tracking-[-0.56px] sm:px-5"
                 >
@@ -166,7 +167,7 @@ export default function CXTSignUpWizardPage() {
             </div>
           </div>
         </div>
-        <Footer className="self-stretch rounded-[12px] bg-black-900" />
+        <Footer4 />
       </div>
     </>
   );

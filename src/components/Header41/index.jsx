@@ -1,7 +1,7 @@
 import { Text, Img, Heading } from "./..";
 import React from "react";
 
-export default function Header1({ ...props }) {
+export default function Header41({ ...props }) {
   return (
     <header {...props} className={`${props.className} flex justify-center items-center w-full gap-[22px]`}>
       <div className="w-full rounded-lg bg-deep_orange-500_16 p-3.5 shadow-xs">
@@ -11,7 +11,7 @@ export default function Header1({ ...props }) {
           </Heading>
           <div className="flex items-start gap-2.5 self-stretch">
             <a href="#">
-              <Img src="images/img_star_svgrepo_com.svg" alt="Star Image" className="h-[20px]" />
+              <Img src="images/img_star_svgrepo_com.svg" alt="Star Rating" className="h-[20px]" />
             </a>
             <Text
               as="p"
@@ -29,7 +29,7 @@ export default function Header1({ ...props }) {
           </Heading>
           <div className="flex items-start gap-2.5 self-stretch">
             <a href="#">
-              <Img src="images/img_star_svgrepo_com.svg" alt="Star Image" className="h-[20px] w-[20px]" />
+              <Img src="images/img_star_svgrepo_com.svg" alt="Star Rating" className="h-[20px] w-[20px]" />
             </a>
             <Text
               as="p"
@@ -48,7 +48,7 @@ export default function Header1({ ...props }) {
             </Heading>
             <div className="flex items-start gap-2 self-stretch">
               <a href="#">
-                <Img src="images/img_star_svgrepo_com.svg" alt="Star Image" className="h-[20px] w-[20px]" />
+                <Img src="images/img_star_svgrepo_com.svg" alt="Star Rating" className="h-[20px] w-[20px]" />
               </a>
               <Text
                 as="p"

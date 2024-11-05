@@ -7,12 +7,12 @@ const dropDownOptions = [
   { label: "Option3", value: "option3" },
 ];
 
-export default function AccountHeaderSection() {
+export default function NavigationSection() {
   return (
     <>
-      {/* account header section */}
+      {/* navigation section */}
       <div className="flex flex-col items-center self-stretch">
-        <div className="container-4xl flex flex-col items-end px-2 lg:px-5 md:px-5">
+        <div className="container-6xl flex flex-col items-end px-2 lg:px-5 md:px-5">
           <div className="flex w-[28%] items-start justify-end lg:w-full md:w-full sm:flex-col">
             <ul className="flex items-start gap-16 self-center">
               <li>

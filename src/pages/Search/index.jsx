@@ -9,7 +9,7 @@ export default function SearchPage() {
         <title>Search Page - Find What You Need</title>
         <meta
           name="description"
-          content="Explore our search page to quickly find the information or services you're looking for. Efficient and user-friendly, our search functionality gets you results."
+          content="Explore our search page to quickly find the information or services you're looking for. Efficient and user-friendly search to enhance your experience."
         />
       </Helmet>
       <div className="flex w-full flex-col items-center justify-center gap-1 bg-gray-300 px-14 py-[774px] md:p-5">
@@ -22,10 +22,10 @@ export default function SearchPage() {
         </Text>
         <Input
           color="white_A700"
-          size="md"
+          size="lg"
           variant="fill"
           shape="square"
-          name="Text Editor"
+          name="Text Input"
           className="mb-1 w-[42%] px-3"
         />
       </div>

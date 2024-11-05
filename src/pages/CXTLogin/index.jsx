@@ -1,21 +1,21 @@
 import { Helmet } from "react-helmet";
 import { Text, Button, Img, Heading, CheckBox, Input } from "../../components";
-import Footer4 from "../../components/Footer4";
-import Header3 from "../../components/Header3";
+import Footer1 from "../../components/Footer1";
+import Header2 from "../../components/Header2";
 import React from "react";
 
 export default function CXTLoginPage() {
   return (
     <>
       <Helmet>
-        <title>Login - Connect with Event Pros and Vendors</title>
+        <title>Login - Connect & Access Your Account</title>
         <meta
           name="description"
-          content="Log in to access your account and join as an event pro or vendor. Explore our services, get support, and take advantage of special offers."
+          content="Welcome back! Log in to your account to explore events, connect with vendors, and access exclusive offers. Join our community today."
         />
       </Helmet>
       <div className="flex w-full flex-col gap-[76px] bg-white-a700 md:gap-[57px] sm:gap-[38px]">
-        <Header3 />
+        <Header2 />
         <div className="flex flex-col items-center gap-[88px] md:gap-[66px] sm:gap-11">
           <div className="mt-[76px] flex w-[36%] flex-col items-center gap-6 md:w-full md:px-5">
             <Heading
@@ -113,7 +113,7 @@ export default function CXTLoginPage() {
                 </div>
                 <Button
                   color="gray_500"
-                  size="md"
+                  size="lg"
                   variant="outline"
                   shape="square"
                   leftIcon={
@@ -137,7 +137,7 @@ export default function CXTLoginPage() {
               </Text>
             </a>
           </div>
-          <Footer4 />
+          <Footer1 />
         </div>
       </div>
     </>

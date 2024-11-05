@@ -1,75 +1,21 @@
 import { Helmet } from "react-helmet";
 import { Button, Img, Text, Heading, Input } from "../../components";
-import Footer1 from "../../components/Footer1";
+import Footer31 from "../../components/Footer31";
+import Header6 from "../../components/Header6";
 import React from "react";
 
 export default function CXTSignUpPage() {
   return (
     <>
       <Helmet>
-        <title>Sign Up - Start Your Journey with Us</title>
+        <title>Sign Up - Create Your New Account</title>
         <meta
           name="description"
-          content="Create your account to join as an event pro or vendor. Sign up easily with Facebook or Google and become part of our growing community."
+          content="Create your account to join as an Event Pro or Vendor. Discover a world of opportunities and partnerships. Sign up easily with just a few clicks."
         />
       </Helmet>
       <div className="flex w-full flex-col items-center gap-[90px] bg-white-a700 md:gap-[67px] sm:gap-[45px]">
-        <header className="flex items-center justify-center self-stretch bg-white-a700">
-          <div className="flex w-[96%] items-center justify-between gap-5 md:w-full md:flex-col md:px-5">
-            <Img
-              src="images/img_connecxit_logo.png"
-              alt="Brand Logo"
-              className="h-[90px] w-[16%] object-contain md:w-full"
-            />
-            <div className="flex w-[46%] items-center justify-center md:w-full md:flex-col">
-              <Button
-                shape="round"
-                className="min-w-[194px] rounded-lg px-[26px] font-medium tracking-[-0.60px] sm:px-5"
-              >
-                Join As An Event Pro
-              </Button>
-              <Button
-                color="red_A700"
-                shape="round"
-                className="ml-2 min-w-[172px] rounded-lg px-[26px] font-medium tracking-[-0.60px] md:ml-0 sm:px-5"
-              >
-                Join As A Vendor
-              </Button>
-              <div className="relative ml-5 h-[40px] flex-1 md:ml-0 md:w-full md:flex-none md:self-stretch">
-                <ul className="absolute bottom-[7.18px] left-0 right-0 !m-auto flex flex-wrap gap-14 md:gap-5">
-                  <li>
-                    <a href="#">
-                      <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                        Explore
-                      </Text>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                        Sign up
-                      </Text>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <Text as="p" className="text-[15px] font-normal tracking-[-0.60px] text-black-900_01">
-                        Log in
-                      </Text>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#">
-                  <Img
-                    src="images/img_image_2.png"
-                    alt="Profile Image"
-                    className="absolute bottom-0 right-1/4 top-0 my-auto h-[40px] w-[40px] rounded-[20px] object-cover"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Header6 className="self-stretch" />
         <div className="flex w-[36%] flex-col items-center gap-3.5 md:w-full md:px-5">
           <Heading
             size="heading3xl"
@@ -155,7 +101,7 @@ export default function CXTSignUpPage() {
                 </a>
                 <a href="https://www.youtube.com/embed/bv8Fxk0sz7I" target="_blank">
                   <Button
-                    size="md"
+                    size="lg"
                     shape="round"
                     className="absolute bottom-0 left-0 right-0 top-0 m-auto flex-1 rounded-lg px-[34px] font-semibold tracking-[-0.56px] sm:px-5"
                   >
@@ -212,7 +158,7 @@ export default function CXTSignUpPage() {
                   </div>
                   <Button
                     color="gray_500"
-                    size="md"
+                    size="lg"
                     variant="outline"
                     shape="square"
                     leftIcon={
@@ -231,7 +177,7 @@ export default function CXTSignUpPage() {
             </div>
           </div>
         </div>
-        <Footer1 />
+        <Footer31 />
       </div>
     </>
   );

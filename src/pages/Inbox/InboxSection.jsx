@@ -6,7 +6,7 @@ export default function InboxSection() {
     <>
       {/* inbox section */}
       <div className="mt-[38px] flex flex-col items-center self-stretch">
-        <div className="container-4xl flex flex-col items-center gap-[50px] px-14 lg:px-5 md:px-5">
+        <div className="container-6xl flex flex-col items-center gap-[50px] px-14 lg:px-5 md:px-5">
           <div className="ml-1.5 flex w-[70%] flex-col items-start lg:w-full md:ml-0 md:w-full">
             <Heading
               size="heading2xl"
@@ -29,7 +29,7 @@ export default function InboxSection() {
               <div className="relative h-[34px] content-center self-stretch lg:h-auto md:h-auto">
                 <Input
                   color="gray_300_01"
-                  size="xs"
+                  size="sm"
                   shape="round"
                   name="Phone Input"
                   placeholder={`(555) 555-5555`}
