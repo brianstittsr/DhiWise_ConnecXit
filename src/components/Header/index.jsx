@@ -33,7 +33,7 @@ export default function Header({ ...props }) {
             <Img
               src="images/img_image_2.png"
               alt="Secondary Image"
-              className="h-[40px] w-[40px] rounded-[20px] object-cover"
+              className="block h-[40px] w-[40px] rounded-[20px] object-cover"
             />
           </a>
           <div className="mb-1.5 flex flex-1 justify-center self-end px-4">
